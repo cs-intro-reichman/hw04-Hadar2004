@@ -127,8 +127,9 @@ public class ArrCharOps {
      *  where arr[i] is the i'th character of the array, and n is the array's length.
      *  The hash value of an empty array is zero.
      */
-    public static int hash(char[] arr) {
-    int res = 0; 
+   
+  public static long hashCode(char[] arr){
+    long res = 0; 
     for (int i = 0; i < arr.length; i++) {
         res = res * 7 + arr[i];
     }
